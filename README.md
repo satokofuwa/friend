@@ -27,7 +27,7 @@ Things you may want to cover:
 * usersコントローラー作成
 * blogs migrationfile作成
 * Users migrationfile作成
-*
+* rails db:create user blogテーブル作成
 *
 *
 *

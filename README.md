@@ -26,7 +26,7 @@ Things you may want to cover:
 * Blogsコントローラー作成
 * usersコントローラー作成
 * blogs migrationfile作成
-*
+* Users migrationfile作成
 *
 *
 *

@@ -30,7 +30,7 @@ Things you may want to cover:
 * rails db:create user blogテーブル作成
 * routes.rb作成
 * blogs_controller.rb作成
-*
+* blogs new.html.erb作成
 *
 *
 *

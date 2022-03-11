@@ -23,4 +23,6 @@ Things you may want to cover:
 
 * friendsコントローラー作成
 * rails db:create
-* Blogs
+* Blogsコントローラー作成
+* usersコントローラー作成
+* 

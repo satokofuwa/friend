@@ -25,4 +25,24 @@ Things you may want to cover:
 * rails db:create
 * Blogsコントローラー作成
 * usersコントローラー作成
-* 
+* blogs migrationfile作成
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+
+*
+
+**
+*
+*
+*
+

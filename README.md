@@ -34,7 +34,7 @@ Things you may want to cover:
 * blogs index.html.erb作成
 * blogs show.html.erb作成
 * _form.html.erb作成
-*
+* blogs_helper作成
 *
 *
 *

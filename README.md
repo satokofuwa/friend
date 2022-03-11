@@ -32,7 +32,7 @@ Things you may want to cover:
 * blogs_controller.rb作成
 * blogs new.html.erb作成
 * blogs index.html.erb作成
-*
+* blogs show.html.erb作成
 *
 *
 *

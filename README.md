@@ -21,6 +21,6 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* コントローラー作成
+* friendsコントローラー作成
 * rails db:create
-*
+* Blogs

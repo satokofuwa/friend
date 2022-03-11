@@ -29,7 +29,7 @@ Things you may want to cover:
 * Users migrationfile作成
 * rails db:create user blogテーブル作成
 * routes.rb作成
-*
+* blogs_controller.rb作成
 *
 *
 *

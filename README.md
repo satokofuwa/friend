@@ -35,13 +35,11 @@ Things you may want to cover:
 * blogs show.html.erb作成
 * _form.html.erb作成
 * blogs_helper作成
+* blogs confirm作成
 *
 *
 *
-
 *
-
-**
 *
 *
 *

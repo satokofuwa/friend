@@ -36,7 +36,7 @@ Things you may want to cover:
 * _form.html.erb作成
 * blogs_helper作成
 * blogs confirm作成
-*
+*　users controller作成
 *
 *
 *

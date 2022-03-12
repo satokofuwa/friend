@@ -42,5 +42,5 @@ Things you may want to cover:
 *　models user.rb作成
 *　models blog.rb作成
 *　rails db:migrte favorates 追加
-*　
+*　favorates_controller 追加
 

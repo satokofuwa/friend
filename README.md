@@ -43,4 +43,5 @@ Things you may want to cover:
 *　models blog.rb作成
 *　rails db:migrte favorates 追加
 *　favorates_controller 追加
+*  application contller追加
 

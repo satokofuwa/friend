@@ -38,7 +38,7 @@ Things you may want to cover:
 * blogs confirm作成
 *　users controller作成
 *　users new.html.erb
-*
+*　users show.html.erb作成
 *
 *
 *

@@ -49,3 +49,4 @@ Things you may want to cover:
 * gem bcrypt追加
 * sessions view中身追加
 * jquery導入
+* gem bootstrap jquery-rails追加

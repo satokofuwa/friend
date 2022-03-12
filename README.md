@@ -46,3 +46,4 @@ Things you may want to cover:
 *  application contller追加
 * sessions_controller 追加
 * sessions_controller 内容記載
+* gem bcrypt追加

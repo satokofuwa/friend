@@ -47,6 +47,10 @@ class BlogsController < ApplicationController
       render :new if @blog.invalid?
   end
 
+  def img
+    @blog = current_user.blogs.build(blog_params)
+  end
+
   private
   def blog_params
     params.require(:blog).permit(:title, :content)

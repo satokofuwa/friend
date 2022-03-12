@@ -50,3 +50,4 @@ Things you may want to cover:
 * sessions view中身追加
 * jquery導入
 * gem bootstrap jquery-rails追加
+* application.html.erb 編集

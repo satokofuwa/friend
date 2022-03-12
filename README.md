@@ -39,7 +39,7 @@ Things you may want to cover:
 *　users controller作成
 *　users new.html.erb
 *　users show.html.erb作成
-*
+*　models user.rb作成
 *
 *
 *

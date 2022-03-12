@@ -52,3 +52,5 @@ Things you may want to cover:
 * gem bootstrap jquery-rails追加
 * application.html.erb 編集
 * Carrierwave mini_magick インストール
+* scaffold feed
+

@@ -6,7 +6,6 @@ Rails.application.routes.draw do
     collection do
       post :confirm
   resources :favorites, only: [:create, :destroy]
-  root "blogs#index"
     end
   end
 end

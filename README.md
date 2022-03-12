@@ -47,3 +47,4 @@ Things you may want to cover:
 * sessions_controller 追加
 * sessions_controller 内容記載
 * gem bcrypt追加
+* sessions view中身追加

@@ -45,3 +45,4 @@ Things you may want to cover:
 *　favorates_controller 追加
 *  application contller追加
 * sessions_controller 追加
+* sessions_controller 内容記載

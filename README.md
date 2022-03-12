@@ -53,4 +53,4 @@ Things you may want to cover:
 * application.html.erb 編集
 * Carrierwave mini_magick インストール
 * scaffold feed
-
+* rails db:migrate

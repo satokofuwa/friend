@@ -54,3 +54,4 @@ Things you may want to cover:
 * Carrierwave mini_magick インストール
 * scaffold feed
 * rails db:migrate
+* Image Uploder作成

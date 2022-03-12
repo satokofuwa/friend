@@ -44,4 +44,4 @@ Things you may want to cover:
 *　rails db:migrte favorates 追加
 *　favorates_controller 追加
 *  application contller追加
-
+* sessions_controller 追加

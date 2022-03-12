@@ -55,3 +55,4 @@ Things you may want to cover:
 * scaffold feed
 * rails db:migrate
 * Image Uploder作成
+* feeds show _form 内容変更

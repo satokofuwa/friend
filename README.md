@@ -40,7 +40,7 @@ Things you may want to cover:
 *　users new.html.erb
 *　users show.html.erb作成
 *　models user.rb作成
-*
+*　models blog.rb作成
 *
 *
 

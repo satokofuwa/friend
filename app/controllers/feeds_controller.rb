@@ -21,6 +21,7 @@ class FeedsController < ApplicationController
 
   def confirm
     @feed = Feed.new(feed_params)
+    @feed.user_id = current_user.id
   end
   
 
@@ -31,7 +32,9 @@ class FeedsController < ApplicationController
 
   # POST /feeds or /feeds.json
   def create
-    @feed = Feed.new(feed_params)
+    @feed = Feed.new(feed_params,)
+    @feed.user_id = current_user.id
+    binding.pry
 
     respond_to do |format|
       if @feed.save
@@ -58,10 +61,9 @@ class FeedsController < ApplicationController
     end
   end
 
-  # DELETE /feeds/1 or /feeds/1.json
+
   def destroy
     @feed.destroy
-
     respond_to do |format|
       format.html { redirect_to feeds_url, notice: "Feed was successfully destroyed." }
       format.json { head :no_content }
@@ -71,12 +73,13 @@ class FeedsController < ApplicationController
   private
     def set_feed
       @feed = Feed.find(params[:id])
-      if @feed.valid?
-        render :confirm
-        else
-        render :new ,:edit
-        end
+      #if @feed.valid?
+       # render :confirm
+        #else
+        #render :new ,:edit
+        #end
     end
+
     def feed_params
       params.require(:feed).permit(:image, :image_cache)
     end

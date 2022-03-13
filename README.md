@@ -64,3 +64,4 @@ Things you may want to cover:
 * デバック機能Gme追加
 * userにfeed reference機能追加
 * feeds controller 修正
+* feed index new 修正

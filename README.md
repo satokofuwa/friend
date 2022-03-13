@@ -62,3 +62,4 @@ Things you may want to cover:
 * テーブル属性変更を取りやめ
 * feed確認画面作成
 * デバック機能Gme追加
+* userにfeed reference機能追加

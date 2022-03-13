@@ -60,3 +60,4 @@ Things you may want to cover:
 * Blogs 画像用カラム追加
 * models 修正
 * テーブル属性変更を取りやめ
+*feed確認画面作成

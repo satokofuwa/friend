@@ -42,6 +42,7 @@ class FeedsController < ApplicationController
         format.json { render json: @feed.errors, status: :unprocessable_entity }
       end
     end
+
   end
 
   # PATCH/PUT /feeds/1 or /feeds/1.json
@@ -70,6 +71,11 @@ class FeedsController < ApplicationController
   private
     def set_feed
       @feed = Feed.find(params[:id])
+      if @feed.valid?
+        render :confirm
+        else
+        render :new ,:edit
+        end
     end
     def feed_params
       params.require(:feed).permit(:image, :image_cache)

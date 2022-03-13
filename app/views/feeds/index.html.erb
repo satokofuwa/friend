@@ -14,7 +14,7 @@
     <% @feeds.each do |feed| %>
       <tr>
         <td><%= feed.image %></td>
-         <td><%= feed.user.name %>投稿者</td>
+        <td><%= feed.user.name %>が投稿 </td>
         <td><%= link_to 'Show', feed %></td>
         <td><%= link_to 'Edit', edit_feed_path(feed) %></td>
         <td><%= link_to 'Destroy', feed, method: :delete, data: { confirm: 'Are you sure?' } %></td>

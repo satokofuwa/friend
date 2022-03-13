@@ -19,7 +19,6 @@ class BlogsController < ApplicationController
       else
         render :new
       end
-
       
     end
   end

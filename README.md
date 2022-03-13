@@ -58,4 +58,4 @@ Things you may want to cover:
 * feeds show _form 内容変更
 * feeds controller変更
 * Blogs 画像用カラム追加
-
+* models 修正

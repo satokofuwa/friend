@@ -7,6 +7,6 @@
         validates :password, length: { minimum: 6 }
         has_many :favorites, dependent: :destroy
         has_many :blogs
-    
+        #ount_uploader :img, ImgUploader
     end
     

@@ -65,3 +65,4 @@ Things you may want to cover:
 * userにfeed reference機能追加
 * feeds controller 修正
 * feed index new 修正
+* Blogs img 名前変更

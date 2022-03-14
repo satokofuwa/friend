@@ -3,10 +3,5 @@ class Feed < ApplicationRecord
     belongs_to :user
     validates :message, presence: true, if: -> { image.blank? }
     validates :image, presence: true, if: -> { message.blank? }
-
-    def user
-        return User.find_by(id: self.id)
-    end
-    
     
 end

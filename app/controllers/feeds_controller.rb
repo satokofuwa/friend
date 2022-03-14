@@ -4,7 +4,6 @@ class FeedsController < ApplicationController
   # GET /feeds or /feeds.json
   def index
     @feeds = Feed.all
-  #  @feeds=  Blog.all
   end
 
   # GET /feeds/1 or /feeds/1.json
@@ -13,11 +12,12 @@ class FeedsController < ApplicationController
 
   # GET /feeds/new
   def new
-    @feed = current_user.blogs.build
+    @feed = current_user.feeds.build
   end
 
   def confirm
     @feed = current_user.feeds.build(feed_params)
+  
     render :new if @feed.invalid?
   end
   
@@ -32,14 +32,15 @@ class FeedsController < ApplicationController
     else
 
       respond_to do |format|
-      if @feed.save
-        format.html { redirect_to feed_url(@feed), notice: "Feed was successfully created." }
-        format.json { render :show, status: :created, location: @feed }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @feed.errors, status: :unprocessable_entity }
-       end
+        if @feed.save
+          format.html { redirect_to feed_url(@feed), notice: "Feed was successfully created." }
+          format.json { render :show, status: :created, location: @feed }
+        else
+          format.html { render :new, status: :unprocessable_entity }
+          format.json { render json: @feed.errors, status: :unprocessable_entity }
+        end
       end
+    end
 
   end
 
@@ -66,18 +67,17 @@ class FeedsController < ApplicationController
   end
 
   private
-    def set_feed
-      @feed = Feed.find(params[:id])
-      #if @feed.valid?
-       # render :confirm
-        #else
-        #render :new ,:edit
-        #end
-    end
+  def set_feed
+    @feed = Feed.find(params[:id])
+    #if @feed.valid?
+      # render :confirm
+      #else
+      #render :new ,:edit
+      #end
+  end
 
-    def feed_params
-      params.require(:feed).permit(:image, :image_cache)
-    end
+  def feed_params
+    params.require(:feed).permit(:image, :image_cache)
   end
 end
 

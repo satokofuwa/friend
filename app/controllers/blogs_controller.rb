@@ -48,7 +48,7 @@ class BlogsController < ApplicationController
       render :new if @blog.invalid?
   end
 
-  def img
+  def image
     @blog = current_user.blogs.build(blog_params)
   end
 

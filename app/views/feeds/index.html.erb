@@ -15,10 +15,10 @@
       <tr>
         <td><%= feed.image %></td>
         <td><%= feed.user.name %>が投稿 </td>
+        <td><%= feed.content %>内容 </td>
         <td><%= link_to 'Show', feed %></td>
         <td><%= link_to 'Edit', edit_feed_path(feed) %></td>
         <td><%= link_to 'Destroy', feed, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        binging.pry
       </tr>
     <% end %>
   </tbody>

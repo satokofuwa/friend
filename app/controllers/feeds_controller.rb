@@ -1,5 +1,5 @@
 class FeedsController < ApplicationController
-  before_action :set_feed, only: %i[ show edit update destroy ]
+  before_action :set_feed, only: %i[ show eidt update destroy ]
 
   # GET /feeds or /feeds.json
   def index
@@ -17,8 +17,8 @@ class FeedsController < ApplicationController
 
   def confirm
     @feed = current_user.feeds.build(feed_params)
-  
-    render :new if @feed.invalid?
+    
+    render :new  if @feed.invalid?
   end
   
   def edit
@@ -60,8 +60,9 @@ class FeedsController < ApplicationController
   # DELETE /feeds/1 or /feeds/1.json
   def destroy
     @feed.destroy
-    respond_to do |format|
+      respond_to do |format|
       format.html { redirect_to feeds_url, notice: "Feed was successfully destroyed." }
+      binding.pry
       format.json { head :no_content }
     end
   end
@@ -70,14 +71,14 @@ class FeedsController < ApplicationController
   def set_feed
     @feed = Feed.find(params[:id])
     #if @feed.valid?
-      # render :confirm
-      #else
-      #render :new ,:edit
+     #   render :confirm
+    # else
+      # render :new,:edit
       #end
   end
 
   def feed_params
-    params.require(:feed).permit(:image, :image_cache)
+    params.require(:feed).permit(:image, :image_cache,:content)
   end
 end
 

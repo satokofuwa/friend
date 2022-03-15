@@ -1,6 +1,6 @@
 class FeedsController < ApplicationController
-  before_action :set_feed, only: %i[ show eidt update destroy ]
-
+  before_action :set_feed, only: %i[ show edit update destroy ]
+  protect_from_forgery :except => [:destroy]
   # GET /feeds or /feeds.json
   def index
     @feeds = Feed.all
@@ -22,11 +22,12 @@ class FeedsController < ApplicationController
   end
   
   def edit
+    @feed = current_user.feeds.build
   end
 
   def create
     @feed = current_user.feeds.build(feed_params)
-
+    binding.pry
     if params[:back]
       render :new
     else
@@ -62,7 +63,6 @@ class FeedsController < ApplicationController
     @feed.destroy
       respond_to do |format|
       format.html { redirect_to feeds_url, notice: "Feed was successfully destroyed." }
-      binding.pry
       format.json { head :no_content }
     end
   end
@@ -70,15 +70,10 @@ class FeedsController < ApplicationController
   private
   def set_feed
     @feed = Feed.find(params[:id])
-    #if @feed.valid?
-     #   render :confirm
-    # else
-      # render :new,:edit
-      #end
   end
 
   def feed_params
-    params.require(:feed).permit(:image, :image_cache,:content)
+    params.require(:feed).permit(:image,:image_cache,:content)
   end
 end
 

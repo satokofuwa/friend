@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root "sessions#new"
-  post 'feeds/:id' => 'feeds#update'
+  
+  # get  'feeds/:id'=> 'feeds#confirm'
   resources :feeds do
     collection do
       post :confirm

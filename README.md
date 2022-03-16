@@ -66,3 +66,4 @@ Things you may want to cover:
 * feeds controller 修正
 * feed index new 修正
 * Blogs img 名前変更
+* destroy変更

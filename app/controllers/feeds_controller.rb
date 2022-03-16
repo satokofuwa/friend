@@ -8,26 +8,25 @@ class FeedsController < ApplicationController
 
   # GET /feeds/1 or /feeds/1.json
   def show
+
+    #@feed = current_user.feeds.find_by(user_id: @feed.id)
   end
 
   # GET /feeds/new
   def new
-    @feed = current_user.feeds.build
+    @feed = Feed.new
   end
-
   def confirm
     @feed = current_user.feeds.build(feed_params)
-    
     render :new  if @feed.invalid?
   end
   
   def edit
-    @feed = current_user.feeds.build
+    @feed = Feed.find(params[:id])
   end
 
   def create
     @feed = current_user.feeds.build(feed_params)
-    binding.pry
     if params[:back]
       render :new
     else

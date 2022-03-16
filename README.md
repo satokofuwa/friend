@@ -67,3 +67,5 @@ Things you may want to cover:
 * feed index new 修正
 * Blogs img 名前変更
 * destroy変更
+* View file 修正
+

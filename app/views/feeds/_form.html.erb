@@ -2,6 +2,7 @@
 
   <div class="field">
     <%= form.label :image %>
+    <br>
     <!-- 確認画面から新規作成画面に戻った時に、 -->
     <!-- アップロードした画像を表示させるための記述 -->
     <%= image_tag (@feed.image.url), size: '320x240' if @feed.image && @feed.image.url%>

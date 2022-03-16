@@ -1,6 +1,6 @@
 class FeedsController < ApplicationController
   before_action :set_feed, only: %i[ show edit update destroy ]
-  protect_from_forgery :except => [:destroy]
+  #protect_from_forgery :except => [:destroy]
   # GET /feeds or /feeds.json
   def index
     @feeds = Feed.all

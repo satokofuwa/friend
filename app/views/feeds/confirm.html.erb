@@ -11,6 +11,7 @@
   <%= form.hidden_field :image_cache %>
   <%= form.submit "投稿する" %>
 <% end %>
+   <%= link_to "投稿画面に戻る", new_feed_path%>
 <br>
 <!--<%= form_with(model:@feed, url:new_feed_path, local:true, method:"get") do |form| %>
   <%= form.hidden_field :image_cache %>

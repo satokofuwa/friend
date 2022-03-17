@@ -70,4 +70,5 @@ Things you may want to cover:
 * View file 修正
 * 404 500ファイル修正
 * Gemfileと404のエラー画面 修正
+* 背景挿入
 

@@ -1,6 +1,6 @@
 class FeedsController < ApplicationController
   before_action :set_feed, only: %i[ show edit update destroy ]
-  #protect_from_forgery :except => [:destroy]
+ 
   # GET /feeds or /feeds.json
   def index
     @feeds = Feed.all
@@ -8,8 +8,6 @@ class FeedsController < ApplicationController
 
   # GET /feeds/1 or /feeds/1.json
   def show
-
-    #@feed = current_user.feeds.find_by(user_id: @feed.id)
   end
 
   # GET /feeds/new
@@ -27,9 +25,9 @@ class FeedsController < ApplicationController
 
   def create
     @feed = current_user.feeds.build(feed_params)
-    if params[:back]
-      render :new
-    else
+      if params[:back]
+        render :new
+      else
 
       respond_to do |format|
         if @feed.save
@@ -41,7 +39,6 @@ class FeedsController < ApplicationController
         end
       end
     end
-
   end
 
   # PATCH/PUT /feeds/1 or /feeds/1.json
@@ -70,7 +67,7 @@ class FeedsController < ApplicationController
   def set_feed
     @feed = Feed.find(params[:id])
   end
-
+  
   def feed_params
     params.require(:feed).permit(:image,:image_cache,:content)
   end

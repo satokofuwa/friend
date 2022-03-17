@@ -71,4 +71,5 @@ Things you may want to cover:
 * 404 500ファイル修正
 * Gemfileと404のエラー画面 修正
 * 背景挿入
+* friendモデル/view/controller/helper削除
 

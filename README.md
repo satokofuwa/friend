@@ -68,4 +68,4 @@ Things you may want to cover:
 * Blogs img 名前変更
 * destroy変更
 * View file 修正
-
+* 404 500ファイル修正

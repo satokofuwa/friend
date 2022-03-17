@@ -3,7 +3,9 @@
   <!-- 確認画面でアップロードした画像を表示させるための記述 -->
   <!--<%= image_tag(@feed.image.url)if @feed.image && @feed.image.url%>-->
    <%= image_tag (@feed.image.url), size: '320x240' if @feed.image && @feed.image.url%>
-   <%= @feed.content%>
+  
+   <p class="abc"><strong>内容: <%= @feed.content %></strong></p>
+  
    <%= form.hidden_field :content %>
   <br>
   <br>

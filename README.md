@@ -69,3 +69,5 @@ Things you may want to cover:
 * destroy変更
 * View file 修正
 * 404 500ファイル修正
+* Gemfileと404のエラー画面 修正
+

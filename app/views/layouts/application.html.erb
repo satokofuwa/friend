@@ -3,13 +3,29 @@
   <head>
     <title>Friend</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
+    <%= csp_meta_tag %> 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
+  <header class="masthead" style="background-image: url(<%= asset_path 'home-bg.jpg' %>)">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    <h1> Friend</h1>
+                    <span class="subheading">友達つながりアプリケーション</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
   <body>
+   <div class="main-container"style="background-image: url(<%= asset_path 'home-bg.jpg' %>)">
+
    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
       <h5 class="my-0 mr-md-auto font-weight-normal" ><a href="/feeds/">ユーザ・画像一覧</a></h5>
       <nav class="my-2 my-md-0 mr-md-3">
@@ -19,8 +35,12 @@
       <a class="btn btn-outline-primary" href="/sessions/new">Log in</a>
     </div> 
 
-    <p class="notice"><%= notice %></p>
+    <!--<p class="notice"><%= notice %></p>-->
+
     <p class="alert"><%= alert %></p>
     <%= yield %>
+    </div>
+  </div>
   </body>
+
 </html>

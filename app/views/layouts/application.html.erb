@@ -25,9 +25,21 @@
       <h5 class="my-0 mr-md-auto font-weight-normal" ><a href="/feeds/">ユーザ・画像一覧</a></h5>
       <nav class="my-2 my-md-0 mr-md-3">
       </nav>
-      <a class="btn btn-outline-primary" href="/users/new">Sign up</a> <br>
-      <a class="btn btn-outline-primary" href="/sessions/new">Log in</a>
 
+      <% flash.each do |key, value| %>
+        <%= content_tag(:div, value, class: "#{key}") %>
+      <% end %>
+
+    <% if logged_in? %>
+      <%= link_to "Profile ", user_path(current_user.id) %> |
+      <%= button_to "Logout", session_path(current_user.id), method: :delete %>
+    <% else %>
+      <%= link_to "Sign up", new_user_path %>
+      <%= link_to "Login", new_session_path %>
+    <% end %>
+      <!--<a class="btn btn-outline-primary" href="/users/new">Sign up</a> <br>-->
+      <!--<a class="btn btn-outline-primary" href="/sessions/new">Log in</a>-->
+      
       <!--%= link_to "Logout", session_path(@current_user.id), method: :delete %>-->
       <!--<a class="btn btn-outline-primary" href="{%url 'sessions :destroy'%}">Log out</a>
       <! <a class="btn btn-outline-primary" href="/sessions/">Log out</a>-->

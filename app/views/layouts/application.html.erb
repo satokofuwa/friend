@@ -7,13 +7,13 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
   <header class="masthead" style="background-image: url(<%= asset_path 'home-bg.jpg' %>)">
     <div class="container position-relative px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="site-heading">
-                    <h1> Friend</h1>
-                    <span class="subheading">友達つながりアプリケーション</span>
+                    <h1 style="text-align:center;"> Friend</h1>
                 </div>
             </div>
         </div>
@@ -27,9 +27,16 @@
       </nav>
       <a class="btn btn-outline-primary" href="/users/new">Sign up</a> <br>
       <a class="btn btn-outline-primary" href="/sessions/new">Log in</a>
+
+      <!--%= link_to "Logout", session_path(@current_user.id), method: :delete %>-->
+      <!--<a class="btn btn-outline-primary" href="{%url 'sessions :destroy'%}">Log out</a>
+      <! <a class="btn btn-outline-primary" href="/sessions/">Log out</a>-->
+
     </div> 
     <p class="alert"><%= alert %></p>
+    <div class="test">
     <%= yield %>
+    </div>
     </div>
   </div>
   </body>

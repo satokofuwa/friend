@@ -14,8 +14,12 @@
         <td><%= feed.user.name %>が投稿 </td>
         <td><%= feed.content %>内容 </td>
         <td><%= link_to 'Show', feed %></td>
+
+         <% if  current_user.id == feed.user.id%> 
         <td><%= link_to 'Edit', edit_feed_path(feed.id)%></td>
         <td><%= button_to 'Destroy',feed_path(feed.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+
       </tr>
     <% end %>
   </tbody>

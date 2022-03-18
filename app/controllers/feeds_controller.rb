@@ -1,6 +1,7 @@
 class FeedsController < ApplicationController
   before_action :set_feed, only: %i[ show edit update destroy ]
- 
+  before_action :access,only: %i[edit destroy]
+
   # GET /feeds or /feeds.json
   def index
     @feeds = Feed.all
@@ -63,13 +64,23 @@ class FeedsController < ApplicationController
     end
   end
 
+
   private
   def set_feed
     @feed = Feed.find(params[:id])
   end
-  
+
   def feed_params
     params.require(:feed).permit(:image,:image_cache,:content)
   end
+
+  def access
+   unless @current_user.id && @feed.user.id == @current_user.id
+   flash[:notice] = "権限がありません"
+   redirect_to feeds_path
+  end
+
+  end
+
 end
 

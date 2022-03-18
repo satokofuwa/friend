@@ -72,4 +72,4 @@ Things you may want to cover:
 * Gemfileと404のエラー画面 修正
 * 背景挿入
 * friendモデル/view/controller/helper削除
-
+* インデント修正

@@ -8,7 +8,7 @@ body {
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
-  line-height: 18px; }
+  line-height: 20px; }
 
 pre {
   background-color: #eee;
@@ -69,5 +69,12 @@ label {
   .main-container{
     background-image: url("/app/assets/images/home-bg.jpg");
     height: 800px;
-  background-size:cover;
+    *background-size:cover;
   }
+
+  .test {
+    /*border:  solid 1px;*/                             /* 枠線指定 */
+    display:  inline-block;                         /* インラインブロックにする */
+    padding: 10px 20px;                             /* 余白指定 */
+    background-color: rgba(255, 255, 255, 0.7);     /* 背景色指定 */
+}

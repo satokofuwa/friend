@@ -75,3 +75,4 @@ Things you may want to cover:
 * インデント修正
 * ログイン処理をapplication.htmlに追加　エラーファイル505修正"
 *  git commit -m "public 内画像削除"  
+* startbootstrap-clean-blog削除

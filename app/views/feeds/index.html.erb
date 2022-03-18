@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+<h1>Feeds</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @feeds.each do |feed| %>
+      <tr>
+        <td><%= feed.image %></td>
+        <td><%= feed.user.name %>が投稿 </td>
+        <td><%= feed.content %>内容 </td>
+        <td><%= link_to 'Show', feed %></td>
+
+         <% if  current_user.id == feed.user.id%> 
+        <td><%= link_to 'Edit', edit_feed_path(feed.id)%></td>
+        <td><%= button_to 'Destroy',feed_path(feed.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+<%= link_to 'New Feed', new_feed_path %>

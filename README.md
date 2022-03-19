@@ -76,4 +76,6 @@ Things you may want to cover:
 * ログイン処理をapplication.htmlに追加　エラーファイル505修正"
 *  git commit -m "public 内画像削除"  
 * startbootstrap-clean-blog削除
+* index画面に画像を表示させる機能追加
+
 

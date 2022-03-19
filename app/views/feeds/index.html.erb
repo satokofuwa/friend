@@ -11,6 +11,7 @@
     <% @feeds.each do |feed| %>
       <tr>
         <td><%= feed.image %></td>
+        <td><%= image_tag (feed.image.url), size: '320x240' if feed.image && feed.image.url%></td>
         <td><%= feed.user.name %>が投稿 </td>
         <td><%= feed.content %>内容 </td>
         <td><%= link_to 'Show', feed %></td>

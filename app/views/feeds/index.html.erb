@@ -20,7 +20,6 @@
         <td><%= link_to 'Edit', edit_feed_path(feed.id)%></td>
         <td><%= button_to 'Destroy',feed_path(feed.id), method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
-
       </tr>
     <% end %>
   </tbody>

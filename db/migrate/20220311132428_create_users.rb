@@ -8,5 +8,5 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string "password_digest"
       t.index ["email"], name: "index_users_on_email", unique: true
        end
-      end     
+  end     
 end

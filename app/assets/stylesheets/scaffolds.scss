@@ -1,6 +1,6 @@
 body {
   background-color: #fff;
-  background-image: url("app/assets/images/home-bg.jpg");
+  background-image: image-url("app/assets/images/home-bg.jpg");
   height: 800px;
   color: #333;
   margin: 33px; }
@@ -67,7 +67,7 @@ label {
   display: block; }
 
   .main-container{
-    background-image: url("/app/assets/images/home-bg.jpg");
+    background-image: image-url("/app/assets/images/home-bg.jpg");
     height: 800px;
     background-size:cover;
     background-repeat: no-repeat;

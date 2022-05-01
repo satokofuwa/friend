@@ -18,6 +18,8 @@ gem 'bootstrap', '~> 4.4.1'
 gem 'jquery-rails'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bcrypt'
+gem 'fog-aws'
+gem 'dotenv-rails'
 
 group :development, :test do
   
@@ -28,7 +30,14 @@ group :development, :test do
   gem 'pry-stack_explorer'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'spring'
+  gem 'rspec-rails'
+  gem 'spring-commands-rspec'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'launchy'
 end
+ gem 'rexml'
 
 group :development do
  

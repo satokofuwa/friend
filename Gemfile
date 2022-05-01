@@ -20,7 +20,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bcrypt'
 gem 'fog-aws'
 gem 'dotenv-rails'
-
+gem 'unicorn'
 group :development, :test do
   gem 'capistrano', '3.16.0' # capistranoのツール一式
   gem 'capistrano-bundler'
